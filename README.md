@@ -10,16 +10,16 @@ MessageAlchemyLLM использует модель Hugging Face для обра
 
 Для подключения модели Hugging Face необходимо получить токен и указать его в файле `.Renviron`.
 
-1. Получите токен на [Hugging Face](https://huggingface.co/).
-2. Создайте или отредактируйте файл `.Renviron` в корневой директории проекта и добавьте:
+1. Получить токен можно на [Hugging Face](https://huggingface.co/).
+2. Создайть файл `.Renviron` нужно в корневой директории проекта и добавить:
 
 ```R
-HF_TOKEN="your_hugging_face_token_here"
+HF_TOKEN="полученный токен"
 ```
 
 ### 2. Установка зависимостей
 
-Все зависимости указаны в файле `requirements.R`. Для установки нужно выполнить:
+Все зависимости указаны в файле `requirements.R`. Для установки требуется выполнить:
 
 ```R
 source("requirements.R")
@@ -41,9 +41,9 @@ source("build.R")
 Rscript build.R
 ```
 
-### 4. Запуск Shiny-приложения
+### 4. Запуск Shiny
 
-Для запуска Shiny-приложения выполнить:
+Для запуска Shiny выполнить:
 
 ```R
 shiny::runApp("app")
