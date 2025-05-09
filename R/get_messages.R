@@ -25,8 +25,8 @@ setup_environment <- function() {
 # 2. Конфигурация
 get_config <- function() {
   list(
-    api_id = 22471500,
-    api_hash = "15728315b8e1de07c28e23bad5fa6619",
+    api_id = ***,
+    api_hash = "***",
     channel = "Cbpub",
     hours_back = 504,
     output_file = "telegram_messages.json",
