@@ -25,7 +25,7 @@ setup_environment <- function() {
 # 2. Конфигурация
 get_config <- function() {
   list(
-    api_id = ***,
+    api_id = **,
     api_hash = "***",
     channel = "Cbpub",
     hours_back = 504,
