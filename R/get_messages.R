@@ -1,5 +1,7 @@
+install.packages("reticulate") 
 library(reticulate)
 library(jsonlite)
+
 
 # 1. Настройка окружения
 setup_environment <- function() {
@@ -25,8 +27,8 @@ get_config <- function() {
   list(
     api_id = 22471500,
     api_hash = "15728315b8e1de07c28e23bad5fa6619",
-    channel = "bbbreaking",
-    hours_back = 24,
+    channel = "Cbpub",
+    hours_back = 504,
     output_file = "telegram_messages.json",
     request_limit = 10,
     chunk_size = 100,
