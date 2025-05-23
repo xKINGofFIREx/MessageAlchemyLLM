@@ -26,13 +26,6 @@ cd MessageAlchemyLLM
 Rscript requirements.R
 ```
 
-Либо вручную установите необходимые пакеты:
-
-```r
-install.packages(c("httr", "dplyr", "lubridate", "stringr",
-                   "jsonlite", "shiny", "xml2"))
-```
-
 3. Убедитесь, что установлен и запущен локальный сервер Ollama:
 
 ```bash
