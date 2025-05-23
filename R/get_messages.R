@@ -24,12 +24,13 @@ setup_environment <- function() {
 
 # 2. Конфигурация
 get_config <- function() {
+  channel <- "economylive"
   list(
-    api_id = **,
-    api_hash = "***",
-    channel = "Cbpub",
-    hours_back = 504,
-    output_file = "telegram_messages.json",
+    api_id = 22471500,
+    api_hash = "15728315b8e1de07c28e23bad5fa6619",
+    channel = channel,
+    hours_back = 168,
+    output_file = paste0("data/telegram_messages_", channel, ".json"),
     request_limit = 10,
     chunk_size = 100,
     session_name = "r_session_1745403555"
