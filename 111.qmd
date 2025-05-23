@@ -162,6 +162,26 @@ db_path <- etl("telegram_messages_banki_economy.json")
 
 ---
 
-## Спасибо за внимание!
-![](images/qr){width=30%}
-<small>GitHub: [https://github.com/xKINGofFIREx/MessageAlchemyLLM](https://github.com/xKINGofFIREx/MessageAlchemyLLM)</small>
+## Спасибо за внимание! {.thank-you-slide}
+
+::: {.columns}
+
+::: {.column width="40%"}
+![](images/qr){width=80% style="display: block; margin: 0 auto;"}
+
+<small style="text-align: center; display: block; margin-top: 10px;">
+  [https://github.com/xKINGofFIREx/MessageAlchemyLLM](https://github.com/xKINGofFIREx/MessageAlchemyLLM)
+</small>
+:::
+
+::: {.column width="60%"}
+**Команда:**  
+<br>
+• Ильин Артём  
+• Тишков Григорий  
+• Шлобин Григорий  
+• Матвеев Иван  
+• Никитчик Саня  
+:::
+
+:::
