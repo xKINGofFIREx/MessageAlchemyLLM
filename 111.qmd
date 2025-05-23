@@ -4,14 +4,14 @@ subtitle: "LLM-powered Telegram Group Summarizer & Sentiment Monitor"
 author: "Москва, 2025"
 format:
   revealjs:
-    theme: moon        # смени, если хочется другой (league, solarized, sky…)
-    slide-number: true  # нумерация снизу-слева
-    toc: false           # авто-оглавление
-    transition: fade    # плавный fade между слайдами
-    center: true        # всё по центру, современно
+    theme: moon
+    slide-number: true 
+    toc: false
+    transition: fade 
+    center: true
     code-line-numbers: true
     highlight-style: monokai
-    chalkboard: true    # ctrl+b для рисования прямо на защите
+    chalkboard: true
     fontsize: 32px
     footer: |
       <div style="position: fixed; top: 20px; right: 20px; z-index: 100;">
