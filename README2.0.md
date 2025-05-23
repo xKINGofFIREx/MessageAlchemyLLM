@@ -31,7 +31,7 @@ Rscript requirements.R
 ```bash
 ollama serve &
 ```
-4. Настройте автоматический сбор сообщений из Telegram
+4. Настройте автоматический сбор сообщений из Telegram:
 
 ```r
 source("R/schedule.R")
