@@ -76,5 +76,5 @@ MessageAlchemyLLM/
 ## Поток обработки данных
 
 Файлы сообщений (`*.json`) → предобработка (`etl.R`) → анализ тональности и генерация дайджестов (`summarization.R`)  
-→ сохранение результатов (`messages.rds`, `summaries.rds`) → экспорт RSS (`rss_generator.R`)  
-→ отображение в веб-интерфейсе (`app/app.R`)
+сохранение результатов (`messages.rds`, `summaries.rds`) → экспорт RSS (`rss_generator.R`)  
+отображение в веб-интерфейсе (`app/app.R`)
