@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+.Renviron
+MessageAlchemyLLM.Rproj
+*.session
+venv/
