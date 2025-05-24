@@ -1,0 +1,18 @@
+install.packages(c(
+  "shiny",
+  "shinydashboard",
+  "shinyWidgets",
+  "ggplot2",
+  "dplyr",
+  "lubridate",
+  "jsonlite",
+  "stringr",
+  "wordcloud",
+  "tm",
+  "RColorBrewer",
+  "DT",
+  "waffle",
+  "reticulate",
+  "xml2",
+  "httr"
+))
