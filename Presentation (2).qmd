@@ -1,0 +1,156 @@
+---
+title: "Message Alchemy LLM"
+subtitle: "LLM-powered Telegram Group Summarizer & Sentiment Monitor"
+author: "Москва, 2025"
+format:
+  revealjs:
+    theme: moon
+    slide-number: true 
+    toc: false
+    transition: fade 
+    center: true
+    code-line-numbers: true
+    highlight-style: monokai
+    chalkboard: true
+    fontsize: 32px
+    footer: |
+      <div style="position: fixed; top: 20px; right: 20px; z-index: 100;">
+        <img src="images/MIREA.png" width="100px" style="opacity: 0.7;">
+      </div>
+---
+
+# Зачем этот проект?
+
+--------------
+
+## Стек
+
+* **ETL:** R, `httr`, `dplyr`, `lubridate`
+* **LLM:** Ollama (QWEN-2.5 7b-instruct)
+* **Визуализация:** `ggplot2`, `plotly`, `wordcloud`
+* **Web-UI:** Shiny + shinydashboard
+
+---
+
+## Фаза ETL
+
+* Скачиваем историю сообщений → JSON
+* Чистим HTML
+* RDS
+
+---
+
+## Фаза Analytics & ML
+![](images/arhitecture.jpg){width=100%}
+
+---
+
+## Архитектура проекта
+
+```
+MessageAlchemyLLM/
+├── build.R               # Скрипт полной сборки проекта
+├── app/                  
+│   └── app.R             # Интерфейс и серверная логика приложения Shiny
+├── R/                    # Модули обработки данных
+│   ├── etl.R             # Предобработка и очистка Telegram JSON
+│   ├── get_messages.R    # Получение и агрегация сообщений
+│   ├── rss_generator.R   # Генерация RSS-ленты на основе анализа
+│   ├── sentiment.R       # Классификация сообщений по тональности
+│   ├── summarization.R   # Генерация кратких резюме и дайджестов
+│   └── shedule.R         # Задание расписания для скачивания сообщений
+├── data/                 # Каталог с входными и выходными данными
+│   ├── telegram_messages_*.json   # Исходные данные (экспорт из Telegram)
+│   ├── messages.rds               # Обработанный датафрейм сообщений
+│   ├── summaries.rds              # Дайджесты по дням и каналам
+│   └── feed.xml                   # RSS-лента с результатами
+├── requirements.R        # Сценарий установки зависимостей (CRAN-пакеты)
+└── README.md             # Документация проекта
+
+```
+---
+
+## Визуализации
+
+![](images/1){width=100%}
+
+---
+
+### Дайджесты (Суммаризация)
+
+![](images/2){width=100%}
+
+---
+
+### Тональность сообщений
+
+![](images/3){width=100%}
+
+---
+
+### Пример сообщений с негативной тональностью
+
+![](images/4){width=100%}
+
+---
+
+### Активность публикации по дням
+
+![](images/5){width=100%}
+
+---
+
+### График распределения тональности с течением времени
+
+![](images/6){width=100%}
+
+---
+
+### Облако слов
+
+![](images/7){width=100%}
+
+---
+
+### Доля тональности сообщений в канале
+
+![](images/8){width=100%}
+
+---
+
+## RSS-feed в действии
+
+```xml
+<item>
+      <title>Сообщение 7521</title>
+      <link>http://example.com/msg/7521</link>
+      <description> (Тональность: NEGATIVE )</description>
+      <pubDate>Пт, 09 мая 2025 20:30:28 +0000</pubDate>
+</item>
+```
+
+---
+
+## Спасибо за внимание! {.thank-you-slide}
+
+::: {.columns}
+
+::: {.column width="40%"}
+![](images/qr){width=80% style="display: block; margin: 0 auto;"}
+
+<small style="text-align: center; display: block; margin-top: 10px;">
+  [https://github.com/xKINGofFIREx/MessageAlchemyLLM](https://github.com/xKINGofFIREx/MessageAlchemyLLM)
+</small>
+:::
+
+::: {.column width="60%"}
+**Команда:**  
+<br>
+• Ильин Артём  
+• Тишков Григорий  
+• Шлобин Григорий  
+• Матвеев Иван  
+• Никитчик Саня  
+:::
+
+:::
